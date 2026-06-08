@@ -68,7 +68,7 @@ calcAbsRatio<-function(
   if(wavelength2 %% 2 == 0){
     absorbanceData2<-absorbanceData[(absorbanceData$wavelength==wavelength2),]
   }
-  if(wavelength1 %% 2 != 0){
+  if(wavelength2 %% 2 != 0){
     absorbanceData2<-absorbanceData[(absorbanceData$wavelength==wavelength2-1|absorbanceData$wavelength==wavelength2+1),]
   }
   absorbanceData<-rbind(absorbanceData1,absorbanceData2)
