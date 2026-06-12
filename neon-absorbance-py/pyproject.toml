@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "neon-absorbance-py"
+version = "0.1.0"
+description = "Python translation of NEON absorbance R functions"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "AGPL-3.0-or-later"
+dependencies = [
+  "pandas>=2.0",
+  "numpy>=1.24",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/neon_absorbance"]
