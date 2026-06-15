@@ -3,7 +3,16 @@
 # Original author: Robert Hensley <hensley@battelleecology.org>
 # Translated to Python by: Adriana Teruel <teruel@battelleecology.org>
 #
+# Description: Calculate SUVA at 254 nm from NEON water chemistry data.
+#   Uses scan data where available; falls back to discrete absorbance values
+#   stored in concentrationData for older samples. Optionally applies
+#   Fe(III) correction.
+#
 # License: GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007
+#
+# changelog and author contributions / copyrights
+#   Adriana Teruel (2026-06-15)
+#     original creation (Python translation of R package)
 
 import pandas as pd
 

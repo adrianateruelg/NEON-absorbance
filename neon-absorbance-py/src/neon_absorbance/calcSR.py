@@ -3,7 +3,16 @@
 # Original author: Robert Hensley <hensley@battelleecology.org>
 # Translated to Python by: Adriana Teruel <teruel@battelleecology.org>
 #
+# Description: Calculate the spectral slope ratio (SR = S275-295 / S350-400)
+#   from NEON water chemistry scan data using linear regression of
+#   log(absorbance) on wavelength over each band. Optionally applies
+#   Fe(III) correction.
+#
 # License: GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007
+#
+# changelog and author contributions / copyrights
+#   Adriana Teruel (2026-06-15)
+#     original creation (Python translation of R package)
 
 import numpy as np
 import pandas as pd

@@ -3,7 +3,15 @@
 # Original author: Robert Hensley <hensley@battelleecology.org>
 # Translated to Python by: Adriana Teruel <teruel@battelleecology.org>
 #
+# Description: Reformat NEON UV-Vis absorbance data from long format (one row
+#   per sample x wavelength) into wide format (one row per sample, one column
+#   per wavelength).
+#
 # License: GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007
+#
+# changelog and author contributions / copyrights
+#   Adriana Teruel (2026-06-15)
+#     original creation (Python translation of R package)
 
 import pandas as pd
 
